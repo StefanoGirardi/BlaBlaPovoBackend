@@ -1,0 +1,28 @@
+[package]
+name = "BlaBlaPovo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+twox-hash = "2.1.1"
+rand = "0.9.1"
+serde = { version = "1.0.219", features = ["derive"] }
+tokio = { version = "1", features = ["full","rt-multi-thread"] }
+rocket =  { version = "0.5.1" , features = ["json","tls"]}
+dotenvy = "0.15.7"
+rocket_cors = "0.6"
+chrono = {version = "0.4.42", features=["serde"]}
+teloxide = { version = "0.17.0", features = ["macros"] }
+rocket_ws = "0.1.1"
+futures-util = "0.3.31"
+tokio-tungstenite = "0.28.0"
+tokio-stream = {version= "0.1.17" , features = ["sync"]}
+dashmap = "6.1.0"
+diesel = { version = "2.1", features = ["postgres","chrono"] }
+diesel-async = { version = "0.4", features = ["postgres", "bb8"] }
+bb8 = "0.8"
+jsonwebtoken = {version ="10.0.0", features = ["rust_crypto"]}
+serial_test = "3.2.0"
+log="0.4.28"
+percent-encoding = "2.3.2"
+urlencoding = "2.1.3"
